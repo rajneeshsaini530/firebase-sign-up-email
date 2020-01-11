@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
                             if(task.isSuccessful()){
 
                                 //do something when sign up success
-                                Toast.makeText(MainActivity.this, "signup sucessfull", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(MainActivity.this, "sign up successful", Toast.LENGTH_SHORT).show();
 
                                 //go to home activity
                                 startActivity(new Intent(MainActivity.this,HomeActivity.class));
