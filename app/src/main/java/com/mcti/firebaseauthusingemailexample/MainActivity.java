@@ -1,5 +1,6 @@
 package com.mcti.firebaseauthusingemailexample;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -44,6 +45,10 @@ public class MainActivity extends AppCompatActivity {
 
                                 //do something when sign up success
                                 Toast.makeText(MainActivity.this, "signup sucessfull", Toast.LENGTH_SHORT).show();
+
+                                //go to home activity
+                                startActivity(new Intent(MainActivity.this,HomeActivity.class));
+
                             }else{
                                 Toast.makeText(MainActivity.this, "sign up failed", Toast.LENGTH_SHORT).show();
                             }
